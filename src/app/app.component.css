@@ -1,0 +1,18 @@
+.notice-header{
+    text-align: center;
+    /* text-decoration: line-through; */
+    padding: 10px 10px;
+    margin: 20px 0px;
+    border: #282828 2px solid;
+    border-radius: 3px;
+    background-color: darkgoldenrod;
+}
+
+.notice-container{
+    text-align: center;
+    text-decoration-color: brown;
+    background-color: lightsalmon;
+    margin: 20px 20px;
+    border: #282828 2px saddlebrown;
+    padding: 5px;
+}

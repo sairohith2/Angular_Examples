@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { NavigationStart, Router, Event, NavigationEnd } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-auth';
+
+  showLoader: boolean = false;
+  
+  router: Router = inject (Router);
+  ngOnInit(){
+  this.router.events.subscribe( (routerEvent: Event) => {
+          if(routerEvent instanceof NavigationStart){
+            this.showLoader=true;
+          }
+
+          if(routerEvent instanceof NavigationEnd){
+            this.showLoader=false;
+          }
+    })
+  }
 }

@@ -1,0 +1,22 @@
+{
+  "restaurants": [
+    {
+      "id": "1",
+      "name": "ABC Restaurants",
+      "address": "Charlotte",
+      "email": "abc@test.com"
+    },
+    {
+      "id": "2",
+      "name": "KFC Restaurants",
+      "address": "Charlotte",
+      "email": "KFC@test.com"
+    },
+    {
+      "name": "yyzaa Restaurants",
+      "address": "Charlotte",
+      "email": "XYZAA@test.com",
+      "id": "1402"
+    }
+  ]
+}

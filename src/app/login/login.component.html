@@ -1,0 +1,31 @@
+<div class="header-containerr"  >
+    <h2>Sample Login Page</h2>
+   <div class="links-page"> 
+        <a routerLink="/Home"  routerLinkActive="active">Home Page</a>
+        <a routerLink="/Train" routerLinkActive="active"> Train Page</a>
+   </div>
+   <div class="header-button">
+    <!-- <button (click)="navigatetotrain()">Sample Button</button> -->
+   </div>
+    <div class ="down-container">
+     <h2>{{isLoginMode ? 'Login' : 'SignUp'}}</h2>
+        <form #authForm="ngForm" (ngSubmit)="onFormSubmitted(authForm)">
+        <label >Username :  </label>
+        <input type="email" placeholder="Enter Username :" required #username  name="email" ngModel> 
+        <br><br>
+        <label>Password : </label>
+        <input type="password" placeholder="Enter Password :" required minlength="8" #password  name="password" ngModel>
+        <br><br>
+    <div class="button">
+        <button type="submit" [disabled]="authForm.invalid"  (click)="onLoginClicked()">{{isLoginMode ? 'Login' : 'SignUP'}}</button><br>
+        <button type="submit" (click)="onLoginClicked()">{{isLoginMode ? 'Login' : 'signUP'}}</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember">Remember Me                        
+        </label>
+        <p> {{ isLoginMode ? 'Do not have an account?' : 'Already have an account'}}
+        <button type="button" (click)="onSwitchMode()">{{isLoginMode? 'Register Here': 'Login Here'}}</button>
+        </p>
+    </div>
+</form>
+    </div>
+</div>  

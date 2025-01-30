@@ -1,0 +1,22 @@
+.head{
+    text-align: center;
+    padding: 50px  50px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    background-color: cornsilk;
+
+}
+
+.heading{
+    background-color: aqua;
+    padding: 20px 50px;
+}
+
+.button{
+    padding: 15px 45px;
+    border: none;
+    margin: 5px 2px;
+    background-color: #1ABC9C;
+    color: white;
+    border-radius: 3px;
+}

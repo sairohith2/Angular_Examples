@@ -1,0 +1,12 @@
+
+
+.page-header-login-logout{
+    width: 26vh;
+    text-align: right;
+    padding: 10px;
+    margin: 0px 400px;
+}
+
+.page header-primary {
+    display: flex;
+}
